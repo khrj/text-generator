@@ -1,0 +1,37 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <title>Wave Generator</title>
+  <meta name="description" content="A utility that generates a wave of words when given input">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#fafafa">
+</head>
+
+<body>
+  <input placeholder="Enter text here" id="text"><button onclick="generate()">GO</button>
+  <br>
+  <div id="output"></div>
+
+  <script>
+    function generate() {
+      document.getElementById('output').innerHTML = "";
+      let str = document.getElementById('text').value;
+      let toReturn = "";
+
+      // Forward
+      for (let i = 0; i < str.length; i++) {
+        toReturn += str.slice(0, i) + "<br>"
+      }
+
+      // Backward
+      for (let i = str.length; i > 0; i--) {
+        toReturn += str.slice(0, i) + "<br>"
+      }
+
+      document.getElementById('output').innerHTML = toReturn
+    }
+  </script>
+</body>
+</html>
