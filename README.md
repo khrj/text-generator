@@ -1,4 +1,7 @@
-# WaveGenerator
-An app that generates a wave of words when given input
+# TextGenerator
+An app that can
 
-[View](https://khushrajrathod.github.io/WaveGenerator)
+- Generate a wave of words when given input
+- Generate a string with ellipses between each word
+
+[View](https://khushrajrathod.github.io/TextGenerator)
