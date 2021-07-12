@@ -1,4 +1,4 @@
-# TextGenerator
+# text-generator
 An app that can
 
 - Generate a wave of words when given input
